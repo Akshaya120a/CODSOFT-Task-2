@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+.main{
+display:grid;
+}
+
+.nav{
+display:grid;
+grid-gap:20px;
+padding:0;
+grid-template-columns:auto auto auto auto;
+}
+.nav ul{
+list-style-type:none;
+}
+.nav a{
+background:#ddd;
+display:block;
+text-decoration:none;
+padding:10px;
+text-align:center;
+color:black;
+font-size:26px;
+text-transform:uppercase;
+box-shadow:1px 1px 3px black;
+}
+
+.nav a:hover{
+background:#123456;
+color:white;
+}
+
+.content{
+grid-area:content;
+background-image:url("/image.html/curry-chicken-with-rice.jpg");
+background-size:cover;
+background-position:center;
+padding:10px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:start;
+min-height:400px;
+font-size:40px
+}
+.content h1{
+font-size:50px;
+color:black;
+font-size:100px;
+}
+
+.top-box{
+background:#ddd;
+display:grid;
+align-items:center;
+justify-content:center;
+padding:10px;
+box-shadow:1px 1px 3px black;
+}
+.top-box-a{
+grid-area:top-box-a;
+}
+
+.top-box-b{
+grid-area:top-box-b;
+}
+.top-container{
+display:grid;
+grid-gap:20px;
+grid-template-areas:
+  'content content top-box-a'
+  'content content top-box-b';
+}
+.box{
+background:#ddd;
+padding:10px 10px;
+text-align:center;
+box-shadow:1px 1px 3px black;
+}
+
+.boxes{
+display:grid;
+grid-gap:20px;
+grid-template-columns:auto auto auto auto;
+}
+
+.info{
+background:#123456;
+box-shadow:1px 1px 3px black;
+padding:25px;
+display:grid;
+grid-gap:20px;
+grid-template-columns:auto auto;
+color:white;
+}
+.gallery{
+display:grid;
+grid-gap:20px;
+grid-template-columns:auto auto auto auto;
+}
+.gallery img{
+width:200px;
+height:200px;
+box-shadow:4px 4px 3px black;
+border-radius:50px
+}
+
+
+footer{
+background:gray;
+text-align:center;
+color:black;
+padding:30px;
+margin-top:20px;
+}
+
+
+.img{
+filter:grayscale(230%);
+}
+</style>
+
+</head>
+
+<body>
+<div class="main" id="mainsection">
+<!-----------nav-------->
+<nav class="nav">
+<ul><li><a href="">home</a></li></ul>
+<ul><li><a href="">about</a></li></ul>
+<ul><li><a href="">contact us</a></li></ul>
+<ul><li><a href="">login</a></li></ul>
+</nav>
+<!----------sub section--------->
+<br><br>
+<section class="top-container">
+<header class="content">
+<h1>Ice Cream</h1>
+<img src="/IMG_20230417_000126.jpg">
+
+
+</header>
+
+
+
+<div class="top-box top-box-a">
+  <img src="/side-view-chocolate-ice-cream-with-nuts-wafer-rolls_140725-11439.webp" width="150px" height="150px">
+<p class="course">chocolate</p>
+
+</div>
+
+<div class="top-box top-box-b">
+<img src="/bright-ice-lolly-plate-with-ice_23-2148107948.webp" width="150px" height="150px">
+<p class="course">Ice pop</p>
+
+</div>
+
+</section>
+<br><br>
+<section class="boxes">
+
+<div class="box">
+  <img src="/1200px-RaspberrySherbet.jpg" width="150px" height="150px">
+<h3>Sorbet</h3>
+
+</div>
+
+<div class="box">
+  <img src="/Vanilla-still-most-popular-US-ice-cream-flavor-says-industry-survey.jpg" width="150px" height="150px">
+<h3>Vanilla</h3>
+
+</div>
+
+<div class="box">
+  <img src="/Butter_pecan_caramel_ice_cream.jpg" width="150px" height="150px">
+<h3>Butter pecan</h3>
+
+</div>
+
+<div class="box">
+  <img src="/strawberry-ice-cream-2.jpg" width="150px" height="150px">
+<h3>Strawberry</h3>
+
+
+</div>
+
+
+</section>
+<br><br>
+<section class="info">
+<img src="/top-view-set-ice-cream-cones-with-chocolate_23-2148425392.webp" alt="error"  width="400px" height="400px">
+<div class="">
+<h3 style="font-size:30px;color:white">Ice creams </h3>
+<p style="font-size:20px">Ice cream is a frozen dessert, typically made from milk or cream and flavoured with a sweetener, either sugar or an alternative, and a spice, such as cocoa or vanilla, or with fruit such as strawberries or peaches. It can also be made by whisking a flavored cream base and liquid nitrogen together. Food coloring is sometimes added, in addition to stabilizers. The mixture is cooled below the freezing point of water and stirred to incorporate air spaces and to prevent detectable ice crystals from forming. The result is a smooth, semi-solid foam that is solid at very low temperatures (below 2 °C or 35 °F). It becomes more malleable as its temperature increases.
+</p>
+</div>
+</section>
+<br><br>
+<section class="gallery">
+
+<img src="/Ice_cream_with_whipped_cream,chocolate_syrup,_and_a_wafer(cropped).jpg" alt="error">
+<img src="/Homemade-Sweet-Ice-Cream-with-Different-Flavors-750x750.jpg" alt="error">
+<img src="/Gelato-750x563.webp" alt="error">
+<img src="/Kulfi-750x563.webp" alt="error">
+<img src="/Falooda-750x563.webp" alt="error">
+<img src="/Rolled-Ice-Cream-750x563.webp" alt="error">
+<img src="/Ice-Popsicle-750x563.webp" alt="error">
+<img src="/Soft-Serve-750x563.webp" alt="error">
+</section>
+
+<footer>
+<h1>different types of Ice creams @2023</h1>
+<div class="container">
+<div class="address">
+  <input type=" " value="name"><br> <br>
+  <input type=" " value="contact no">
+  </div>
+<div class="address1">
+  <p>Kurnool chef <br>near by<br> dupadu railway station <br>pincode:515767</p>
+  </div>  
+  <div class="address2">
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-twitter"></i>
+  <i class="fa-brands fa-whatsapp"></i>
+  <i class="fa-brands fa-telegram"></i>
+ </div>
+</footer>
+
+
+
+
+</body>
+</html>
